@@ -44,5 +44,8 @@ private:
 
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
+
+	UPROPERTY(EditAnywhere, Category = Input,meta=(AllowPrivateAccess=true),BlueprintReadOnly)
+	class UWidgetComponent* OverheadWidget;
 	
 };
